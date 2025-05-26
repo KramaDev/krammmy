@@ -80,6 +80,23 @@ nav ul li {
   margin-left: 20px;
 }
 
+@media (min-width: 768px) {
+nav .logo {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+  
+}
+
 .hero {
   background-image: url('https://images.unsplash.com/photo-1508138221679-760a23a2285b?q=80&w=1974&auto=format&fit=crop');
   background-size: cover;
