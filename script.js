@@ -22,7 +22,7 @@ function enlargeImage(src, alt) {
 
   modal.style.display = "block";
   modalImg.src = src;
-  caption.innerText = alt || "";
+  caption.textContent = alt || "";
 }
 
 
