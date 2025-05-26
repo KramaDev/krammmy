@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krammmy|Photography & Videography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar transparent">
+  <div class="logo">Krammmy</div>
+  <ul>
+    <li><a href="#about-me">About Me</a></li>
+    <li><a href="#products">Presets</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+  </ul>
+</nav>
+  </header>
+  
+  <!-- Fullscreen Modal -->
+<div id="imageModal" class="modal" onclick="outsideClick(event)">
+  <span class="close" onclick="closeModal()">×</span>
+  <img class="modal-content" id="modalImage" />
+  <div id="caption" class="caption"></div>
+</div>
+
+  <section class="hero">
+    <h1>Photography | Videography</h1>
+    <p>I capture moments that tell stories</p>
+    <a href="#" class="btn">Contact Me</a>
+  </section>
+  
+  <section class="about-me" id="about-me">
+  <div class="about-me-container">
+    <div class="about-photo">
+      <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile Photo" />
+    </div>
+    <div class="about-info">
+      <h2>Mario Kramarić</h2>
+      <p class="location">📍 Croatia, Osijek</p>
+      <p class="bio">
+        I’m a passionate photographer with a love for capturing cityscapes, moods, and urban storytelling. My goal is to bring emotion into every shot and help others create their own visual voice through my presets.
+      </p>
+      <a href="#products" class="btn">Explore My Presets</a>
+    </div>
+  </div>
+</section>
+
+  <section class="products" id="products"> 
+  <h2>Current Presets</h2>
+  <div class="product-grid">
+    <div class="product-card" onclick="enlargeImage('https://images.unsplash.com/photo-1697289462507-1f133d023277?q=80&w=2132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+      <img src="https://images.unsplash.com/photo-1697289462507-1f133d023277?q=80&w=2132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Urban Grain" />
+      <h3>Urban Grain</h3>
+    </div>
+    <div class="product-card" onclick="enlargeImage('https://images.unsplash.com/photo-1699891793760-01ea8be3ca1b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+      <img src="https://images.unsplash.com/photo-1699891793760-01ea8be3ca1b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="B&W Heaven" />
+      <h3>B&W Heaven</h3>
+    </div>
+    <div class="product-card" onclick="enlargeImage('https://images.unsplash.com/photo-1739614110473-141500f8cadf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+      <img src="https://images.unsplash.com/photo-1739614110473-141500f8cadf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Saturated Beauty" />
+      <h3>Saturated Beauty</h3>
+    </div>
+  </div>
+</section>
+  
+ <section class="gallery" id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80" alt="Beach at sunset" onclick="enlargeImage('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80', 'Beach at sunset')" />
+    
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80" alt="Beach at sunset" onclick="enlargeImage('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80', 'Beach at sunset')" />
+
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80" alt="Beach at sunset" onclick="enlargeImage('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80', 'Beach at sunset')" />
+
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80" alt="Beach at sunset" onclick="enlargeImage('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80', 'Beach at sunset')" />
+
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80" alt="Beach at sunset" onclick="enlargeImage('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80', 'Beach at sunset')" />
+
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80" alt="Beach at sunset" onclick="enlargeImage('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80', 'Beach at sunset')" />
+
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80" alt="Beach at sunset" onclick="enlargeImage('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80', 'Beach at sunset')" />
+
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80" alt="Beach at sunset" onclick="enlargeImage('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80', 'Beach at sunset')" />
+
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80" alt="Beach at sunset" onclick="enlargeImage('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=800&q=80', 'Beach at sunset')" />
+
+
+    
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 <a href="#">Krammmy</a>. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
