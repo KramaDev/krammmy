@@ -1,9 +1,11 @@
 const hero = document.querySelector(".hero");
 
 const heroImages = [
-  "https://images.unsplash.com/photo-1508138221679-760a23a2285b?q=80&w=1974&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1605142859862-978be7eba909?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1612814621951-b24b753ca716?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  "images/bg1.jpg",
+  "images/bg2.jpeg",
+  "images/bg3.jpeg",
+  "images/bg4.jpeg",
+  "images/bg5.jpg"
 ];
 
 let currentIndex = 0;
