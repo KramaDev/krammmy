@@ -193,11 +193,25 @@ nav ul li {
   width: 100%;
 }
 
-.about-photo img {
+.about-photo {
   width: 250px;
   height: 250px;
+  animation: blob-animation 8s infinite alternate;
+  overflow: hidden;
+  padding: 0.5rem;
+  background-color: #ff7f50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40% 20% 70% 40% / 30% 60% 50% 40%; /* match first frame of animation */
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: inherit;
+  display: block;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -237,6 +251,19 @@ nav ul li {
 
   .about-info {
     max-width: 60%;
+  }
+}
+
+/* 👇 Blob animation keyframes */
+@keyframes blob-animation {
+  0% {
+    border-radius: 40% 20% 70% 40% / 30% 60% 50% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 20% 50% / 30% 30% 40% 60%;
+  }
+  100% {
+    border-radius: 20% 50% 60% 20% / 30% 50% 20% 60%;
   }
 }
 
