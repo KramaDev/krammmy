@@ -15,15 +15,16 @@ function changeHeroBackground() {
   hero.style.backgroundImage = `url(${heroImages[currentIndex]})`;
 }
 
-function enlargeImage(src, alt) {
+function enlargeImage(imgElement) {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImage");
   const caption = document.getElementById("caption");
 
   modal.style.display = "block";
-  modalImg.src = src;
-  caption.innerText = alt || "";
+  modalImg.src = imgElement.src;
+  caption.innerText = imgElement.alt || "";
 }
+
 
 // Close modal
 function closeModal() {
