@@ -15,14 +15,14 @@ function changeHeroBackground() {
   hero.style.backgroundImage = `url(${heroImages[currentIndex]})`;
 }
 
-function enlargeImage(imgElement) {
+function enlargeImage(src, alt) {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImage");
   const caption = document.getElementById("caption");
 
   modal.style.display = "block";
-  modalImg.src = imgElement.src;
-  caption.innerText = imgElement.alt || "";
+  modalImg.src = src;
+  caption.innerText = alt || "";
 }
 
 
