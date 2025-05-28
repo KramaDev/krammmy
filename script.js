@@ -26,8 +26,8 @@ function enlargeImage(src, alt) {
 
   modal.style.display = "block";
   modalImg.src = src;
-  modalImg.alt = alt;
   caption.textContent = alt || "";
+}
 
   // Reset zoom state
   modalImg.classList.remove("zoomed");
