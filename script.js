@@ -1,5 +1,6 @@
 const hero = document.querySelector(".hero");
 
+
 const heroImages = [
   "images/bg1.jpg",
   "images/bg2.jpeg",
@@ -15,6 +16,9 @@ function changeHeroBackground() {
   hero.style.backgroundImage = `url(${heroImages[currentIndex]})`;
 }
 
+document.getElementById("modalImage").addEventListener("click", function () {
+  this.classList.toggle("zoomed");
+
 function enlargeImage(src, alt) {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImage");
@@ -22,7 +26,11 @@ function enlargeImage(src, alt) {
 
   modal.style.display = "block";
   modalImg.src = src;
+  modalImg.alt = alt;
   caption.textContent = alt || "";
+
+  // Reset zoom state
+  modalImg.classList.remove("zoomed");
 }
 
 
