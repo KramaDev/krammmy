@@ -1,6 +1,5 @@
 const hero = document.querySelector(".hero");
 
-
 const heroImages = [
   "images/bg1.jpg",
   "images/bg2.jpeg",
@@ -16,9 +15,12 @@ function changeHeroBackground() {
   hero.style.backgroundImage = `url(${heroImages[currentIndex]})`;
 }
 
+// ✅ Zoom on click
 document.getElementById("modalImage").addEventListener("click", function () {
   this.classList.toggle("zoomed");
+});
 
+// ✅ Global function so HTML onclick can find it
 function enlargeImage(src, alt) {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImage");
@@ -27,12 +29,10 @@ function enlargeImage(src, alt) {
   modal.style.display = "block";
   modalImg.src = src;
   caption.textContent = alt || "";
-}
 
-  // Reset zoom state
+  // Ensure zoom is reset on open
   modalImg.classList.remove("zoomed");
 }
-
 
 // Close modal
 function closeModal() {
@@ -56,8 +56,10 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-setInterval(changeHeroBackground, 15000); // every 15 seconds
+// Auto-change hero background every 15s
+setInterval(changeHeroBackground, 15000);
 
+// Navbar transparency toggle
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
   if (window.scrollY > 50) {
